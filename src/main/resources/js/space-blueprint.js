@@ -60,7 +60,7 @@ AJS.toInit(function($) {
      */
     function choosePathSubmit(e, state) {
         var greeting = state.pageData.greeting;
-        if (greeting == "hello") {
+        if (greeting == "Hi") {
             state.nextPageId = "spaceFormPageId";
         } else if (greeting == "search") {
             state.nextPageId = "searchFormPageId";
@@ -78,7 +78,7 @@ AJS.toInit(function($) {
         }
     }
 
-    function helloPageOnSubmit(e, state) {
+    function spacePageOnSubmit(e, state) {
         return validateHelloForm(state);
     }
 
@@ -117,13 +117,13 @@ AJS.toInit(function($) {
     }
 
     // Register wizard hooks
-    Confluence.Blueprint.setWizard('com.atlassian.confluence.plugins.hello-blueprint:hello-space-blueprint-item', function(wizard) {
+    Confluence.Blueprint.setWizard('com.ps.plugins.confluence.space.space-blueprint:space-blueprint-item', function(wizard) {
         wizard.on("pre-render.spaceBasicDetailsId", Confluence.SpaceBlueprint.CommonWizardBindings.preRender);
         wizard.on("post-render.spaceBasicDetailsId", Confluence.SpaceBlueprint.CommonWizardBindings.postRender);
         wizard.on("submit.spaceBasicDetailsId", Confluence.SpaceBlueprint.CommonWizardBindings.submit);
     });
 
-    Confluence.Blueprint.setWizard('com.atlassian.confluence.plugins.hello-blueprint:hello-blueprint-item', function(wizard) {
+    Confluence.Blueprint.setWizard('com.ps.plugins.confluence.space.space-blueprint:space-blueprint-item', function(wizard) {
         wizard.on("submit.choosePathPageId", choosePathSubmit);
 
         wizard.on("post-render.helloFormPageId", helloPagePostRender);
