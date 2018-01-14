@@ -1,0 +1,9 @@
+<ac:layout><ac:layout-section ac:type="two_right_sidebar"><ac:layout-cell>
+<h1>Heading 1</h1>
+<h2>Sub-1</h2></ac:layout-cell><ac:layout-cell><ac:structured-macro ac:macro-id="9f558e35-f644-4c7c-84f8-bb3e630a7234" ac:name="info" ac:schema-version="1"><ac:rich-text-body>
+<p><ac:structured-macro ac:macro-id="38f1f005-a980-41c2-ade0-dcfc5867a3b4" ac:name="toc" ac:schema-version="1" /></p></ac:rich-text-body></ac:structured-macro></ac:layout-cell></ac:layout-section><ac:layout-section ac:type="single"><ac:layout-cell>
+<h1>Heading 2&nbsp;</h1>
+<h2>Sub-2</h2></ac:layout-cell></ac:layout-section><ac:layout-section ac:type="single"><ac:layout-cell>
+<h1>Heading 3&nbsp;</h1>
+<h2>Sub-3&nbsp;</h2></ac:layout-cell></ac:layout-section><ac:layout-section ac:type="single"><ac:layout-cell>
+<p>&nbsp;</p></ac:layout-cell></ac:layout-section></ac:layout>
